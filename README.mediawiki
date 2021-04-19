@@ -1,0 +1,1145 @@
+People wishing to submit BIPs, first should propose their idea or document to the [https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev bitcoin-dev@lists.linuxfoundation.org] mailing list (do <em>not</em> assign a number - read <a href="bip-0002.mediawiki">BIP 2</a> for the full process). After discussion, please open a PR. After copy-editing and acceptance, it will be published here.
+
+We are fairly liberal with approving BIPs, and try not to be too involved in decision making on behalf of the community. The exception is in very rare cases of dispute resolution when a decision is contentious and cannot be agreed upon. In those cases, the conservative option will always be preferred.
+
+Having a BIP here does not make it a formally accepted standard until its status becomes Final or Active.
+
+Those proposing changes should consider that ultimately consent may rest with the consensus of the Bitcoin users (see also: [https://en.bitcoin.it/wiki/Economic_majority economic majority]).
+
+{| class="wikitable sortable" style="width: auto; text-align: center; font-size: smaller; table-layout: fixed;"
+!Number
+!Created
+!Layer
+!Title
+!Owner
+!Type
+!Status
+|- style="background-color: #ffcfcf"
+| [[bip-0001.mediawiki|1]]
+| 2011-09-19
+|
+| BIP Purpose and Guidelines
+| Amir Taaki
+| Process
+| Replaced
+|- style="background-color: #cfffcf"
+| [[bip-0002.mediawiki|2]]
+| 2016-02-03
+|
+| BIP process, revised
+| Luke Dashjr
+| Process
+| Active
+|-
+| [[bip-0008.mediawiki|8]]
+| 2017-02-01
+|
+| Version bits with lock-in by height
+| Shaolin Fry, Luke Dashjr
+| Informational
+| Draft
+|- style="background-color: #cfffcf"
+| [[bip-0009.mediawiki|9]]
+| 2015-10-04
+|
+| Version bits with timeout and delay
+| Pieter Wuille, Peter Todd, Greg Maxwell, Rusty Russell
+| Informational
+| Final
+|- style="background-color: #ffcfcf"
+| [[bip-0010.mediawiki|10]]
+| 2011-10-28
+| Applications
+| Multi-Sig Transaction Distribution
+| Alan Reiner
+| Informational
+| Withdrawn
+|- style="background-color: #cfffcf"
+| [[bip-0011.mediawiki|11]]
+| 2011-10-18
+| Applications
+| M-of-N Standard Transactions
+| Gavin Andresen
+| Standard
+| Final
+|- style="background-color: #ffcfcf"
+| [[bip-0012.mediawiki|12]]
+| 2011-10-18
+| Consensus (soft fork)
+| OP_EVAL
+| Gavin Andresen
+| Standard
+| Withdrawn
+|- style="background-color: #cfffcf"
+| [[bip-0013.mediawiki|13]]
+| 2011-10-18
+| Applications
+| Address Format for pay-to-script-hash
+| Gavin Andresen
+| Standard
+| Final
+|- style="background-color: #cfffcf"
+| [[bip-0014.mediawiki|14]]
+| 2011-11-10
+| Peer Services
+| Protocol Version and User Agent
+| Amir Taaki, Patrick Strateman
+| Standard
+| Final
+|-
+| [[bip-0015.mediawiki|15]]
+| 2011-12-10
+| Applications
+| Aliases
+| Amir Taaki
+| Standard
+| Deferred
+|- style="background-color: #cfffcf"
+| [[bip-0016.mediawiki|16]]
+| 2012-01-03
+| Consensus (soft fork)
+| Pay to Script Hash
+| Gavin Andresen
+| Standard
+| Final
+|- style="background-color: #ffcfcf"
+| [[bip-0017.mediawiki|17]]
+| 2012-01-18
+| Consensus (soft fork)
+| OP_CHECKHASHVERIFY (CHV)
+| Luke Dashjr
+| Standard
+| Withdrawn
+|- style="background-color: #ffffcf"
+| [[bip-0018.mediawiki|18]]
+| 2012-01-27
+| Consensus (soft fork)
+| hashScriptCheck
+| Luke Dashjr
+| Standard
+| Proposed
+|- style="background-color: #ffcfcf"
+| [[bip-0019.mediawiki|19]]
+| 2012-01-30
+| Applications
+| M-of-N Standard Transactions (Low SigOp)
+| Luke Dashjr
+| Standard
+| Rejected
+|- style="background-color: #ffcfcf"
+| [[bip-0020.mediawiki|20]]
+| 2011-01-10
+| Applications
+| URI Scheme
+| Luke Dashjr
+| Standard
+| Replaced
+|- style="background-color: #cfffcf"
+| [[bip-0021.mediawiki|21]]
+| 2012-01-29
+| Applications
+| URI Scheme
+| Nils Schneider, Matt Corallo
+| Standard
+| Final
+|- style="background-color: #cfffcf"
+| [[bip-0022.mediawiki|22]]
+| 2012-02-28
+| API/RPC
+| getblocktemplate - Fundamentals
+| Luke Dashjr
+| Standard
+| Final
+|- style="background-color: #cfffcf"
+| [[bip-0023.mediawiki|23]]
+| 2012-02-28
+| API/RPC
+| getblocktemplate - Pooled Mining
+| Luke Dashjr
+| Standard
+| Final
+|- style="background-color: #cfffcf"
+| [[bip-0030.mediawiki|30]]
+| 2012-02-22
+| Consensus (soft fork)
+| Duplicate transactions
+| Pieter Wuille
+| Standard
+| Final
+|- style="background-color: #cfffcf"
+| [[bip-0031.mediawiki|31]]
+| 2012-04-11
+| Peer Services
+| Pong message
+| Mike Hearn
+| Standard
+| Final
+|- style="background-color: #cfffcf"
+| [[bip-0032.mediawiki|32]]
+| 2012-02-11
+| Applications
+| Hierarchical Deterministic Wallets
+| Pieter Wuille
+| Informational
+| Final
+|- style="background-color: #ffcfcf"
+| [[bip-0033.mediawiki|33]]
+| 2012-05-15
+| Peer Services
+| Stratized Nodes
+| Amir Taaki
+| Standard
+| Rejected
+|- style="background-color: #cfffcf"
+| [[bip-0034.mediawiki|34]]
+| 2012-07-06
+| Consensus (soft fork)
+| Block v2, Height in Coinbase
+| Gavin Andresen
+| Standard
+| Final
+|- style="background-color: #cfffcf"
+| [[bip-0035.mediawiki|35]]
+| 2012-08-16
+| Peer Services
+| mempool message
+| Jeff Garzik
+| Standard
+| Final
+|- style="background-color: #ffcfcf"
+| [[bip-0036.mediawiki|36]]
+| 2012-08-03
+| Peer Services
+| Custom Services
+| Stefan Thomas
+| Standard
+| Rejected
+|- style="background-color: #cfffcf"
+| [[bip-0037.mediawiki|37]]
+| 2012-10-24
+| Peer Services
+| Connection Bloom filtering
+| Mike Hearn, Matt Corallo
+| Standard
+| Final
+|-
+| [[bip-0038.mediawiki|38]]
+| 2012-11-20
+| Applications
+| Passphrase-protected private key
+| Mike Caldwell, Aaron Voisine
+| Standard
+| Draft
+|- style="background-color: #ffffcf"
+| [[bip-0039.mediawiki|39]]
+| 2013-09-10
+| Applications
+| Mnemonic code for generating deterministic keys
+| Marek Palatinus, Pavol Rusnak, Aaron Voisine, Sean Bowe
+| Standard
+| Proposed
+|-
+| 40
+| API/RPC
+| Stratum wire protocol
+| Marek Palatinus
+| Standard
+| BIP number allocated
+|-
+| 41
+| API/RPC
+| Stratum mining protocol
+| Marek Palatinus
+| Standard
+| BIP number allocated
+|- style="background-color: #cfffcf"
+| [[bip-0042.mediawiki|42]]
+| 2014-04-01
+| Consensus (soft fork)
+| A finite monetary supply for Bitcoin
+| Pieter Wuille
+| Standard
+| Final
+|- style="background-color: #cfffcf"
+| [[bip-0043.mediawiki|43]]
+| 2014-04-24
+| Applications
+| Purpose Field for Deterministic Wallets
+| Marek Palatinus, Pavol Rusnak
+| Informational
+| Final
+|- style="background-color: #ffffcf"
+| [[bip-0044.mediawiki|44]]
+| 2014-04-24
+| Applications
+| Multi-Account Hierarchy for Deterministic Wallets
+| Marek Palatinus, Pavol Rusnak
+| Standard
+| Proposed
+|- style="background-color: #ffffcf"
+| [[bip-0045.mediawiki|45]]
+| 2014-04-25
+| Applications
+| Structure for Deterministic P2SH Multisignature Wallets
+| Manuel Araoz, Ryan X. Charles, Matias Alejo Garcia
+| Standard
+| Proposed
+|-
+| [[bip-0047.mediawiki|47]]
+| 2015-04-24
+| Applications
+| Reusable Payment Codes for Hierarchical Deterministic Wallets
+| Justus Ranvier
+| Informational
+| Draft
+|- style="background-color: #cfffcf"
+| [[bip-0049.mediawiki|49]]
+| 2016-05-19
+| Applications
+| Derivation scheme for P2WPKH-nested-in-P2SH based accounts
+| Daniel Weigl
+| Informational
+| Final
+|- style="background-color: #cfffcf"
+| [[bip-0050.mediawiki|50]]
+| 2013-03-20
+|
+| March 2013 Chain Fork Post-Mortem
+| Gavin Andresen
+| Informational
+| Final
+<!-- 50 series reserved for a group of post-mortems -->
+|-
+| [[bip-0060.mediawiki|60]]
+| 2013-06-16
+| Peer Services
+| Fixed Length "version" Message (Relay-Transactions Field)
+| Amir Taaki
+| Standard
+| Draft
+|- style="background-color: #cfffcf"
+| [[bip-0061.mediawiki|61]]
+| 2014-06-18
+| Peer Services
+| Reject P2P message
+| Gavin Andresen
+| Standard
+| Final
+|- style="background-color: #ffcfcf"
+| [[bip-0062.mediawiki|62]]
+| 2014-03-12
+| Consensus (soft fork)
+| Dealing with malleability
+| Pieter Wuille
+| Standard
+| Withdrawn
+|-
+| 63
+| Applications
+| Stealth Addresses
+| Peter Todd
+| Standard
+| BIP number allocated
+|- style="background-color: #ffcfcf"
+| [[bip-0064.mediawiki|64]]
+| 2014-06-10
+| Peer Services
+| getutxo message
+| Mike Hearn
+| Standard
+| Obsolete
+|- style="background-color: #cfffcf"
+| [[bip-0065.mediawiki|65]]
+| 2014-10-01
+| Consensus (soft fork)
+| OP_CHECKLOCKTIMEVERIFY
+| Peter Todd
+| Standard
+| Final
+|- style="background-color: #cfffcf"
+| [[bip-0066.mediawiki|66]]
+| 2015-01-10
+| Consensus (soft fork)
+| Strict DER signatures
+| Pieter Wuille
+| Standard
+| Final
+|- style="background-color: #ffffcf"
+| [[bip-0067.mediawiki|67]]
+| 2015-02-08
+| Applications
+| Deterministic Pay-to-script-hash multi-signature addresses through public key sorting
+| Thomas Kerin, Jean-Pierre Rupp, Ruben de Vries
+| Standard
+| Proposed
+|- style="background-color: #cfffcf"
+| [[bip-0068.mediawiki|68]]
+| 2015-05-28
+| Consensus (soft fork)
+| Relative lock-time using consensus-enforced sequence numbers
+| Mark Friedenbach, BtcDrak, Nicolas Dorier, kinoshitajona
+| Standard
+| Final
+|- style="background-color: #ffffcf"
+| [[bip-0069.mediawiki|69]]
+| 2015-06-12
+| Applications
+| Lexicographical Indexing of Transaction Inputs and Outputs
+| Kristov Atlas
+| Informational
+| Proposed
+|- style="background-color: #cfffcf"
+| [[bip-0070.mediawiki|70]]
+| 2013-07-29
+| Applications
+| Payment Protocol
+| Gavin Andresen, Mike Hearn
+| Standard
+| Final
+|- style="background-color: #cfffcf"
+| [[bip-0071.mediawiki|71]]
+| 2013-07-29
+| Applications
+| Payment Protocol MIME types
+| Gavin Andresen
+| Standard
+| Final
+|- style="background-color: #cfffcf"
+| [[bip-0072.mediawiki|72]]
+| 2013-07-29
+| Applications
+| bitcoin: uri extensions for Payment Protocol
+| Gavin Andresen
+| Standard
+| Final
+|- style="background-color: #cfffcf"
+| [[bip-0073.mediawiki|73]]
+| 2013-08-27
+| Applications
+| Use "Accept" header for response type negotiation with Payment Request URLs
+| Stephen Pair
+| Standard
+| Final
+|- style="background-color: #ffcfcf"
+| [[bip-0074.mediawiki|74]]
+| 2016-01-29
+| Applications
+| Allow zero value OP_RETURN in Payment Protocol
+| Toby Padilla
+| Standard
+| Rejected
+|- style="background-color: #cfffcf"
+| [[bip-0075.mediawiki|75]]
+| 2015-11-20
+| Applications
+| Out of Band Address Exchange using Payment Protocol Encryption
+| Justin Newton, Matt David, Aaron Voisine, James MacWhyte
+| Standard
+| Final
+|-
+| [[bip-0078.mediawiki|78]]
+| 2019-05-01
+| Applications
+| A Simple Payjoin Proposal
+| Nicolas Dorier
+| Standard
+| Draft
+|- style="background-color: #ffcfcf"
+| [[bip-0079.mediawiki|79]]
+| 2018-10-05
+| Applications
+| Bustapay :: a practical coinjoin protocol
+| Ryan Havar
+| Informational
+| Replaced
+|-
+| [[bip-0080.mediawiki|80]]
+| 2014-08-11
+|
+| Hierarchy for Non-Colored Voting Pool Deterministic Multisig Wallets
+| Justus Ranvier, Jimmy Song
+| Informational
+| Deferred
+|-
+| [[bip-0081.mediawiki|81]]
+| 2014-08-11
+|
+| Hierarchy for Colored Voting Pool Deterministic Multisig Wallets
+| Justus Ranvier, Jimmy Song
+| Informational
+| Deferred
+|- style="background-color: #ffcfcf"
+| [[bip-0083.mediawiki|83]]
+| 2015-11-16
+| Applications
+| Dynamic Hierarchical Deterministic Key Trees
+| Eric Lombrozo
+| Standard
+| Rejected
+|-
+| [[bip-0084.mediawiki|84]]
+| 2017-12-28
+| Applications
+| Derivation scheme for P2WPKH based accounts
+| Pavol Rusnak
+| Informational
+| Draft
+|-
+| [[bip-0085.mediawiki|85]]
+| 2020-03-20
+| Applications
+| Deterministic Entropy From BIP32 Keychains
+| Ethan Kosakovsky
+| Informational
+| Draft
+|- style="background-color: #cfffcf"
+| [[bip-0090.mediawiki|90]]
+| 2016-11-08
+|
+| Buried Deployments
+| Suhas Daftuar
+| Informational
+| Final
+|- style="background-color: #cfffcf"
+| [[bip-0091.mediawiki|91]]
+| 2017-05-22
+| Consensus (soft fork)
+| Reduced threshold Segwit MASF
+| James Hilliard
+| Standard
+| Final
+|-
+| [[bip-0098.mediawiki|98]]
+| 2017-08-24
+| Consensus (soft fork)
+| Fast Merkle Trees
+| Mark Friedenbach, Kalle Alm, BtcDrak
+| Standard
+| Draft
+|- style="background-color: #ffcfcf"
+| [[bip-0099.mediawiki|99]]
+| 2015-06-20
+|
+| Motivation and deployment of consensus rule changes ([soft/hard]forks)
+| Jorge Timón
+| Informational
+| Rejected
+|- style="background-color: #ffcfcf"
+| [[bip-0100.mediawiki|100]]
+| 2015-06-11
+| Consensus (hard fork)
+| Dynamic maximum block size by miner vote
+| Jeff Garzik, Tom Harding, Dagur Valberg Johannsson
+| Standard
+| Rejected
+|- style="background-color: #ffcfcf"
+| [[bip-0101.mediawiki|101]]
+| 2015-06-22
+| Consensus (hard fork)
+| Increase maximum block size
+| Gavin Andresen
+| Standard
+| Withdrawn
+|- style="background-color: #ffcfcf"
+| [[bip-0102.mediawiki|102]]
+| 2015-06-23
+| Consensus (hard fork)
+| Block size increase to 2MB
+| Jeff Garzik
+| Standard
+| Rejected
+|- style="background-color: #ffcfcf"
+| [[bip-0103.mediawiki|103]]
+| 2015-07-21
+| Consensus (hard fork)
+| Block size following technological growth
+| Pieter Wuille
+| Standard
+| Withdrawn
+|- style="background-color: #ffcfcf"
+| [[bip-0104.mediawiki|104]]
+| 2017-01-13
+| Consensus (hard fork)
+| 'Block75' - Max block size like difficulty
+| t.khan
+| Standard
+| Rejected
+|- style="background-color: #ffcfcf"
+| [[bip-0105.mediawiki|105]]
+| 2015-08-21
+| Consensus (hard fork)
+| Consensus based block size retargeting algorithm
+| BtcDrak
+| Standard
+| Rejected
+|- style="background-color: #ffcfcf"
+| [[bip-0106.mediawiki|106]]
+| 2015-08-24
+| Consensus (hard fork)
+| Dynamically Controlled Bitcoin Block Size Max Cap
+| Upal Chakraborty
+| Standard
+| Rejected
+|- style="background-color: #ffcfcf"
+| [[bip-0107.mediawiki|107]]
+| 2015-09-11
+| Consensus (hard fork)
+| Dynamic limit on the block size
+| Washington Y. Sanchez
+| Standard
+| Rejected
+|- style="background-color: #ffcfcf"
+| [[bip-0109.mediawiki|109]]
+| 2016-01-28
+| Consensus (hard fork)
+| Two million byte size limit with sigop and sighash limits
+| Gavin Andresen
+| Standard
+| Rejected
+|- style="background-color: #ffffcf"
+| [[bip-0111.mediawiki|111]]
+| 2015-08-20
+| Peer Services
+| NODE_BLOOM service bit
+| Matt Corallo, Peter Todd
+| Standard
+| Proposed
+|- style="background-color: #cfffcf"
+| [[bip-0112.mediawiki|112]]
+| 2015-08-10
+| Consensus (soft fork)
+| CHECKSEQUENCEVERIFY
+| BtcDrak, Mark Friedenbach, Eric Lombrozo
+| Standard
+| Final
+|- style="background-color: #cfffcf"
+| [[bip-0113.mediawiki|113]]
+| 2015-08-10
+| Consensus (soft fork)
+| Median time-past as endpoint for lock-time calculations
+| Thomas Kerin, Mark Friedenbach
+| Standard
+| Final
+|- style="background-color: #ffcfcf"
+| [[bip-0114.mediawiki|114]]
+| 2016-04-02
+| Consensus (soft fork)
+| Merkelized Abstract Syntax Tree
+| Johnson Lau
+| Standard
+| Rejected
+|- style="background-color: #ffcfcf"
+| [[bip-0115.mediawiki|115]]
+| 2016-09-23
+| Consensus (soft fork)
+| Generic anti-replay protection using Script
+| Luke Dashjr
+| Standard
+| Rejected
+|-
+| [[bip-0116.mediawiki|116]]
+| 2017-08-25
+| Consensus (soft fork)
+| MERKLEBRANCHVERIFY
+| Mark Friedenbach, Kalle Alm, BtcDrak
+| Standard
+| Draft
+|-
+| [[bip-0117.mediawiki|117]]
+| 2017-08-25
+| Consensus (soft fork)
+| Tail Call Execution Semantics
+| Mark Friedenbach, Kalle Alm, BtcDrak
+| Standard
+| Draft
+|-
+| [[bip-0118.mediawiki|118]]
+| 2017-02-28
+| Consensus (soft fork)
+| SIGHASH_NOINPUT
+| Christian Decker
+| Standard
+| Draft
+|-
+| [[bip-0119.mediawiki|119]]
+| 2020-01-06
+| Consensus (soft fork)
+| CHECKTEMPLATEVERIFY
+| Jeremy Rubin
+| Standard
+| Draft
+|- style="background-color: #ffcfcf"
+| [[bip-0120.mediawiki|120]]
+| 2015-07-28
+| Applications
+| Proof of Payment
+| Kalle Rosenbaum
+| Standard
+| Withdrawn
+|- style="background-color: #ffcfcf"
+| [[bip-0121.mediawiki|121]]
+| 2015-07-27
+| Applications
+| Proof of Payment URI scheme
+| Kalle Rosenbaum
+| Standard
+| Withdrawn
+|-
+| [[bip-0122.mediawiki|122]]
+| 2015-08-29
+| Applications
+| URI scheme for Blockchain references / exploration
+| Marco Pontello
+| Standard
+| Draft
+|- style="background-color: #cfffcf"
+| [[bip-0123.mediawiki|123]]
+| 2015-08-26
+|
+| BIP Classification
+| Eric Lombrozo
+| Process
+| Active
+|- style="background-color: #ffcfcf"
+| [[bip-0124.mediawiki|124]]
+| 2015-11-20
+| Applications
+| Hierarchical Deterministic Script Templates
+| Eric Lombrozo, William Swanson
+| Informational
+| Rejected
+|- style="background-color: #ffffcf"
+| [[bip-0125.mediawiki|125]]
+| 2015-12-04
+| Applications
+| Opt-in Full Replace-by-Fee Signaling
+| David A. Harding, Peter Todd
+| Standard
+| Proposed
+|-
+| [[bip-0126.mediawiki|126]]
+| 2016-02-10
+|
+| Best Practices for Heterogeneous Input Script Transactions
+| Kristov Atlas
+| Informational
+| Draft
+|-
+| [[bip-0127.mediawiki|127]]
+| 2019-01-28
+| Applications
+| Simple Proof-of-Reserves Transactions
+| Steven Roose
+| Standard
+| Draft
+|- style="background-color: #ffffcf"
+| [[bip-0130.mediawiki|130]]
+| 2015-05-08
+| Peer Services
+| sendheaders message
+| Suhas Daftuar
+| Standard
+| Proposed
+|- style="background-color: #ffcfcf"
+| [[bip-0131.mediawiki|131]]
+| 2015-11-30
+| Consensus (hard fork)
+| "Coalescing Transaction" Specification (wildcard inputs)
+| Chris Priest
+| Standard
+| Rejected
+|- style="background-color: #ffcfcf"
+| [[bip-0132.mediawiki|132]]
+| 2015-08-31
+|
+| Committee-based BIP Acceptance Process
+| Andy Chase
+| Process
+| Withdrawn
+|-
+| [[bip-0133.mediawiki|133]]
+| 2016-02-13
+| Peer Services
+| feefilter message
+| Alex Morcos
+| Standard
+| Draft
+|- style="background-color: #ffcfcf"
+| [[bip-0134.mediawiki|134]]
+| 2016-07-27
+| Consensus (hard fork)
+| Flexible Transactions
+| Tom Zander
+| Standard
+| Rejected
+|- style="background-color: #ffcfcf"
+| [[bip-0135.mediawiki|135]]
+| 2017-03-29
+|
+| Generalized version bits voting
+| Sancho Panza
+| Informational
+| Rejected
+|-
+| [[bip-0136.mediawiki|136]]
+| 2017-07-09
+| Applications
+| Bech32 Encoded Tx Position References
+| Велеслав, Jonas Schnelli, Daniel Pape
+| Informational
+| Draft
+|- style="background-color: #cfffcf"
+| [[bip-0137.mediawiki|137]]
+| 2019-02-16
+| Applications
+| Signatures of Messages using Private Keys
+| Christopher Gilliard
+| Standard
+| Final
+|- style="background-color: #ffcfcf"
+| [[bip-0140.mediawiki|140]]
+| 2015-10-14
+| Consensus (soft fork)
+| Normalized TXID
+| Christian Decker
+| Standard
+| Rejected
+|- style="background-color: #cfffcf"
+| [[bip-0141.mediawiki|141]]
+| 2015-12-21
+| Consensus (soft fork)
+| Segregated Witness (Consensus layer)
+| Eric Lombrozo, Johnson Lau, Pieter Wuille
+| Standard
+| Final
+|- style="background-color: #ffcfcf"
+| [[bip-0142.mediawiki|142]]
+| 2015-12-24
+| Applications
+| Address Format for Segregated Witness
+| Johnson Lau
+| Standard
+| Withdrawn
+|- style="background-color: #cfffcf"
+| [[bip-0143.mediawiki|143]]
+| 2016-01-03
+| Consensus (soft fork)
+| Transaction Signature Verification for Version 0 Witness Program
+| Johnson Lau, Pieter Wuille
+| Standard
+| Final
+|- style="background-color: #cfffcf"
+| [[bip-0144.mediawiki|144]]
+| 2016-01-08
+| Peer Services
+| Segregated Witness (Peer Services)
+| Eric Lombrozo, Pieter Wuille
+| Standard
+| Final
+|- style="background-color: #cfffcf"
+| [[bip-0145.mediawiki|145]]
+| 2016-01-30
+| API/RPC
+| getblocktemplate Updates for Segregated Witness
+| Luke Dashjr
+| Standard
+| Final
+|- style="background-color: #ffcfcf"
+| [[bip-0146.mediawiki|146]]
+| 2016-08-16
+| Consensus (soft fork)
+| Dealing with signature encoding malleability
+| Johnson Lau, Pieter Wuille
+| Standard
+| Withdrawn
+|- style="background-color: #cfffcf"
+| [[bip-0147.mediawiki|147]]
+| 2016-09-02
+| Consensus (soft fork)
+| Dealing with dummy stack element malleability
+| Johnson Lau
+| Standard
+| Final
+|- style="background-color: #cfffcf"
+| [[bip-0148.mediawiki|148]]
+| 2017-03-12
+| Consensus (soft fork)
+| Mandatory activation of segwit deployment
+| Shaolin Fry
+| Standard
+| Final
+|- style="background-color: #ffcfcf"
+| [[bip-0149.mediawiki|149]]
+| 2017-04-14
+| Consensus (soft fork)
+| Segregated Witness (second deployment)
+| Shaolin Fry
+| Standard
+| Withdrawn
+|-
+| [[bip-0150.mediawiki|150]]
+| 2016-03-23
+| Peer Services
+| Peer Authentication
+| Jonas Schnelli
+| Standard
+| Draft
+|- style="background-color: #ffcfcf"
+| [[bip-0151.mediawiki|151]]
+| 2016-03-23
+| Peer Services
+| Peer-to-Peer Communication Encryption
+| Jonas Schnelli
+| Standard
+| Withdrawn
+|- style="background-color: #cfffcf"
+| [[bip-0152.mediawiki|152]]
+| 2016-04-27
+| Peer Services
+| Compact Block Relay
+| Matt Corallo
+| Standard
+| Final
+|- style="background-color: #ffcfcf"
+| [[bip-0154.mediawiki|154]]
+| 2017-04-12
+| Peer Services
+| Rate Limiting via peer specified challenges
+| Karl-Johan Alm
+| Standard
+| Withdrawn
+|-
+| [[bip-0155.mediawiki|155]]
+| 2019-02-27
+| Peer Services
+| addrv2 message
+| Wladimir J. van der Laan
+| Standard
+| Draft
+|- style="background-color: #ffcfcf"
+| [[bip-0156.mediawiki|156]]
+| 2017-06-09
+| Peer Services
+| Dandelion - Privacy Enhancing Routing
+| Brad Denby, Andrew Miller, Giulia Fanti, Surya Bakshi, Shaileshh Bojja Venkatakrishnan, Pramod Viswanath
+| Standard
+| Rejected
+|-
+| [[bip-0157.mediawiki|157]]
+| 2017-05-24
+| Peer Services
+| Client Side Block Filtering
+| Olaoluwa Osuntokun, Alex Akselrod, Jim Posen
+| Standard
+| Draft
+|-
+| [[bip-0158.mediawiki|158]]
+| 2017-05-24
+| Peer Services
+| Compact Block Filters for Light Clients
+| Olaoluwa Osuntokun, Alex Akselrod
+| Standard
+| Draft
+|-
+| [[bip-0159.mediawiki|159]]
+| 2017-05-11
+| Peer Services
+| NODE_NETWORK_LIMITED service bit
+| Jonas Schnelli
+| Standard
+| Draft
+|- style="background-color: #ffcfcf"
+| [[bip-0171.mediawiki|171]]
+| 2017-03-04
+| Applications
+| Currency/exchange rate information API
+| Luke Dashjr
+| Standard
+| Rejected
+|- style="background-color: #cfffcf"
+| [[bip-0173.mediawiki|173]]
+| 2017-03-20
+| Applications
+| Base32 address format for native v0-16 witness outputs
+| Pieter Wuille, Greg Maxwell
+| Informational
+| Final
+|- style="background-color: #cfffcf"
+| [[bip-0174.mediawiki|174]]
+| 2017-07-12
+| Applications
+| Partially Signed Bitcoin Transaction Format
+| Andrew Chow
+| Standard
+| Final
+|- style="background-color: #ffcfcf"
+| [[bip-0175.mediawiki|175]]
+| 2017-07-17
+| Applications
+| Pay to Contract Protocol
+| Omar Shibli, Nicholas Gregory
+| Informational
+| Rejected
+|-
+| [[bip-0176.mediawiki|176]]
+| 2017-12-12
+|
+| Bits Denomination
+| Jimmy Song
+| Informational
+| Draft
+|-
+| [[bip-0178.mediawiki|178]]
+| 2018-04-04
+| Applications
+| Version Extended WIF
+| Karl-Johan Alm
+| Standard
+| Draft
+|-
+| [[bip-0179.mediawiki|179]]
+| 2019-10-17
+|
+| Name for payment recipient identifiers
+| Emil Engler, MarcoFalke, Luke Dashjr
+| Informational
+| Draft
+|- style="background-color: #ffcfcf"
+| [[bip-0180.mediawiki|180]]
+| 2017-03-17
+| Peer Services
+| Block size/weight fraud proof
+| Luke Dashjr
+| Standard
+| Rejected
+|-
+| [[bip-0197.mediawiki|197]]
+| 2019-03-19
+| Applications
+| Hashed Time-Locked Collateral Contract
+| Matthew Black, Tony Cai
+| Standard
+| Draft
+|-
+| [[bip-0199.mediawiki|199]]
+| 2017-03-27
+| Applications
+| Hashed Time-Locked Contract transactions
+| Sean Bowe, Daira Hopwood
+| Standard
+| Draft
+|-
+| [[bip-0300.mediawiki|300]]
+| 2017-08-14
+| Consensus (soft fork)
+| Hashrate Escrows (Consensus layer)
+| Paul Sztorc, CryptAxe
+| Standard
+| Draft
+|-
+| [[bip-0301.mediawiki|301]]
+| 2019-07-23
+| Consensus (soft fork)
+| Blind Merged Mining (Consensus layer)
+| Paul Sztorc, CryptAxe
+| Standard
+| Draft
+|-
+| [[bip-0310.mediawiki|310]]
+| 2018-03-10
+| Applications
+| Stratum protocol extensions
+| Pavel Moravec, Jan Čapek
+| Informational
+| Draft
+|-
+| [[bip-0320.mediawiki|320]]
+| 2018-03-01
+|
+| nVersion bits for general purpose use
+| BtcDrak
+| Standard
+| Draft
+|-
+| [[bip-0322.mediawiki|322]]
+| 2018-09-10
+| Applications
+| Generic Signed Message Format
+| Karl-Johan Alm
+| Standard
+| Draft
+|- style="background-color: #ffffcf"
+| [[bip-0325.mediawiki|325]]
+| 2019-03-20
+| Applications
+| Signet
+| Karl-Johan Alm, Anthony Towns
+| Standard
+| Proposed
+|-
+| [[bip-0330.mediawiki|330]]
+| 2019-09-25
+| Peer Services
+| Transaction announcements reconciliation
+| Gleb Naumenko, Pieter Wuille
+| Standard
+| Draft
+|-
+| [[bip-0338.mediawiki|338]]
+| 2020-09-03
+| Peer Services
+| Disable transaction relay message
+| Suhas Daftuar
+| Standard
+| Draft
+|-
+| [[bip-0339.mediawiki|339]]
+| 2020-02-03
+| Peer Services
+| WTXID-based transaction relay
+| Suhas Daftuar
+| Standard
+| Draft
+|-
+| [[bip-0340.mediawiki|340]]
+| 2020-01-19
+|
+| Schnorr Signatures for secp256k1
+| Pieter Wuille, Jonas Nick, Tim Ruffing
+| Standard
+| Draft
+|-
+| [[bip-0341.mediawiki|341]]
+| 2020-01-19
+| Consensus (soft fork)
+| Taproot: SegWit version 1 spending rules
+| Pieter Wuille, Jonas Nick, Anthony Towns
+| Standard
+| Draft
+|-
+| [[bip-0342.mediawiki|342]]
+| 2020-01-19
+| Consensus (soft fork)
+| Validation of Taproot Scripts
+| Pieter Wuille, Jonas Nick, Anthony Towns
+| Standard
+| Draft
+|-
+| [[bip-0350.mediawiki|350]]
+| 2020-12-16
+| Applications
+| Bech32m format for v1+ witness addresses
+| Pieter Wuille
+| Standard
+| Draft
+|-
+| [[bip-0370.mediawiki|370]]
+| 2021-01-14
+| Applications
+| PSBT Version 2
+| Andrew Chow
+| Standard
+| Draft
+|}
+
+<!-- IMPORTANT!  See the instructions at the top of this page, do NOT JUST add BIPs here! -->
